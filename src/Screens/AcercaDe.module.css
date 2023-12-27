@@ -1,0 +1,22 @@
+.AcercaDe {
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: url("../imagenes/pared-negra.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.textContainer{
+    width: 38vw;
+    height: 68vh;
+    font-size: 1.2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
