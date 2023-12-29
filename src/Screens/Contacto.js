@@ -21,16 +21,16 @@ const Contacto = () => {
       </div>
       <div className={styles.iconContainer}>
             <a href="https://www.linkedin.com/in/leonardo-aponte-sandoval-0768a2230/" target="_blank" rel="noreferrer" className={styles.icon} >
-              <BsLinkedin /> Linkedin
+              <BsLinkedin className={styles.IconoLit}/> Linkedin
             </a>
             <a href="https://www.instagram.com/leonardo_aponte123/" rel="noreferrer" target="_blank" className={styles.icon}  >
-              <FaInstagram /> Instagram
+              <FaInstagram className={styles.IconoLit}/> Instagram
             </a>
             <a href="https://github.com/Leonardoasd" target="_blank" className={styles.icon} rel="noreferrer" >
-              <FaGithub  /> Github
+              <FaGithub className={styles.IconoLit} /> Github
             </a>
             <div onClick={handlePhone} className={Phone === false ? styles.icon : styles.celNumber} >
-              <HiOutlineDevicePhoneMobile /> Llámame<p className={Phone === false ? styles.mostrar : styles.noMostrar} >+591 69244553</p>
+              <HiOutlineDevicePhoneMobile className={styles.IconoLit}/> Llámame<p className={Phone === false ? styles.mostrar : styles.noMostrar} >+591 69244553</p>
             </div>
         </div>
     </div>

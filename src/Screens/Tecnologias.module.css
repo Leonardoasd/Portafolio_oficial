@@ -2,7 +2,6 @@
     border-top: 6vh solid black;
     border-bottom: 6vh solid black;
     background-color: #1e404f;
-    width: 100%;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@
     border: 1px solid black;
     margin: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 80vw;
     height: 25vh;
@@ -25,13 +24,14 @@
     background-position: center;
     border-radius: 10px;
     box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
 }
-.Container .divDelLogo {
+.divDelLogo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8vw;
-    height: 16vh;
+    width: 115px;
+    height: 115px;
     border-radius: 10px;
     transition: box-shadow 0.3s ease, height 0.3s ease, width 0.3s ease;
 }
@@ -47,35 +47,36 @@
 }
 .logosCss{
     height: 100px;
+    width: auto;
 }
 .logoJS {
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: auto;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
 }
 .logoReact {
     height: 100px;
-    width: 100px;
-    margin: 0 20px 0 20px;
+    width: auto;
+    margin: 0 1.2vw 0 1.2vw;
 }
 .logoRedux{
     height: 100px;
-    width: 130px;
+    width: auto;
     border-radius: 10px;
 }
 .logoBootstrap {
     height: 100px;
     border-radius: 10px;
-    margin: 0 15px 0 15px;
+    margin: 0 1.2vw 0 1.2vw;
 }
 .logoD3 {
     height: 100px;
 }
 .lvlJS {
     background: linear-gradient(to top, green 70%, white 30%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
@@ -85,19 +86,20 @@
 }
 .lvlHtml {
     background: linear-gradient(to top, green 80%, white 20%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    
 }
 .lvlCss {
     background: linear-gradient(to top, green 80%, white 20%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
@@ -107,8 +109,8 @@
 }
 .lvlReact {
     background: linear-gradient(to top, green 60%, white 40%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
@@ -118,8 +120,8 @@
 }
 .lvlRedux {
     background: linear-gradient(to top, green 40%, white 40%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
@@ -129,8 +131,8 @@
 }
 .lvlBootstrap {
     background: linear-gradient(to top, green 40%, white 40%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
@@ -140,12 +142,92 @@
 }
 .lvlD3 {
     background: linear-gradient(to top, green 40%, white 40%);
-    height: 18vh;
-    width: 6vw;
+    height: 125px;
+    width: 92px;
     border-radius: 15px;
     transition: height 0.3s ease, width 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     color: white;
+}
+@media (max-width: 600px){
+    .divDelLogo {
+        margin: 0 0 0 4vw;
+    }
+    .Container{
+        justify-content: flex-start;
+
+    }
+    .logoHtml {
+        height: 14vh;
+    }
+    .logosCss{
+        height: 14vh;
+    }
+    .logoJS {
+        height: 13vh;
+        width: auto;
+        border-radius: 15px;
+    }
+    .logoReact {
+        height: 14vh;
+        width: auto;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoRedux{
+        height: 14vh;
+        width: auto;
+    }
+    .logoBootstrap {
+        height: 14vh;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoD3 {
+        height: 14vh;
+    }
+    .lvlHtml, .lvlCss, .lvlJS, .lvlReact, .lvlRedux, .lvlD3, .lvlBootstrap {
+        padding: 0 30px 0 30px;
+        margin: 0 30px 0 30px
+    }
+}
+@media (max-width: 400px){
+    .divDelLogo {
+        margin: 0 0 0 4vw;
+    }
+    .Container{
+        justify-content: flex-start;
+
+    }
+    .logoHtml {
+        height: 14vh;
+    }
+    .logosCss{
+        height: 14vh;
+    }
+    .logoJS {
+        height: 13vh;
+        width: auto;
+        border-radius: 15px;
+    }
+    .logoReact {
+        height: 14vh;
+        width: auto;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoRedux{
+        height: 14vh;
+        width: auto;
+    }
+    .logoBootstrap {
+        height: 14vh;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoD3 {
+        height: 14vh;
+    }
+    .lvlHtml, .lvlCss, .lvlJS, .lvlReact, .lvlRedux, .lvlD3, .lvlBootstrap {
+        padding: 0 30px 0 30px;
+        margin: 0 30px 0 30px
+    }
 }

@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     font-size: 1.6em;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
 }
 .Home p {
     color: rgb(118, 117, 117);
@@ -16,7 +19,7 @@
     position: relative;
     display: block;
     white-space: nowrap;
-    width: 16ch;
+    width: 18ch;
     border-right: 4px solid white;
     animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
     overflow: hidden;
@@ -30,5 +33,17 @@
 @keyframes blink {
     50%{
         border-color: transparent;
+    }
+}
+@media (max-width: 600px){
+    .Home {
+        font-size: 1em;
+        height: 100vh;
+    }
+}
+@media (max-width: 400px){
+    .Home {
+        font-size: 1em;
+        height: 100vh;
     }
 }

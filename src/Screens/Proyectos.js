@@ -59,10 +59,10 @@ const Proyectos = () => {
           </div>
         </div>
         <div className={styles.proyecto1}></div>
-        <div className={styles.proyecto3}></div>
-        <div className={styles.proyecto4}></div>
+        <div className={styles.proyecto1}></div>
+        {/* <div className={styles.proyecto4}></div>
         <div className={styles.proyecto5}></div>
-        <div className={styles.proyecto6}></div>
+        <div className={styles.proyecto6}></div> */}
       </div>
     </div>
   )

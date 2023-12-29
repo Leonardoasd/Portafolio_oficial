@@ -75,9 +75,9 @@ const NavBar = () => {
        : ((windowDimension.width < 900 || windowDimension.height > 1300) && (<AiOutlineClose onClick={() => setNavBarOpen(!navBarOpen)} className={styles.closeNav} size={40} />))
        }
       {navBarOpen &&
-        <ul>
+        <ul className={styles.navOpenContainer}>
         {links.map((x) => (
-          <div>
+          <div >
             <Link onClick={() => setNavBarOpen(!navBarOpen)}
             to={x.link} 
             smooth 

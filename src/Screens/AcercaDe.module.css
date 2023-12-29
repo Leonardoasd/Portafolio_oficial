@@ -1,22 +1,98 @@
 .AcercaDe {
-    border: 1px solid black;
     margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
     background: url("../imagenes/pared-negra.jpg");
     background-size: cover;
     background-position: center;
     color: white;
 }
 .textContainer{
-    width: 38vw;
-    height: 68vh;
+    width: 90vw;
+    height: 84vh;
     font-size: 1.2em;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
+} 
+.textContainer h1 {
+    text-align: center;
+}
+.textContainer p{
+    margin: 30px;
+    line-height: 32px;
+}
+.contImg {
+    height: 60vh;
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+}
+@media (max-width: 600px){
+    .textContainer{
+        font-size: 0.8em;
+        width: 90vw;
+        height: 80vh;
+    }
+    .contImg {
+        height: 30vh;
+        width: 50vw;
+        float: right;
+    }
+    .AcercaDe{
+        justify-content: center;
+    }
+    .textContainer h1 {
+        text-align: center;
+        font-size: 2.8em;
+    }
+    .textContainer p{
+        margin: 0 0 2vh 0;
+        line-height: 15px;
+        font-size: 1em;
+    }
+}
+@media (max-width: 400px){
+    .textContainer{
+        font-size: 0.8em;
+        width: 90vw;
+        height: 80vh;
+    }
+    .contImg {
+        height: 30vh;
+        width: 50vw;
+        float: right;
+    }
+    .AcercaDe{
+        justify-content: center;
+    }
+    .textContainer h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .textContainer p{
+        margin: 0 0 2vh 0;
+        line-height: 14px;
+        font-size: 1em;
+    }
+}
+@media (max-width: 310px){
+
+    .textContainer{
+        font-size: 0.5em;
+        float: left;
+        width: 50vw;
+    }
+    .contImg {
+        height: 25vh;
+        width: 40vw;
+    }
+    .contImg img {
+        height: 100px;
+        width: auto;
+    }
+    .AcercaDe{
+        justify-content: center;
+    }
 }
