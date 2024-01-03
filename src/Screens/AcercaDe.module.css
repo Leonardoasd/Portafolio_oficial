@@ -11,7 +11,7 @@
     color: white;
 }
 .textContainer{
-    width: 90vw;
+    width: 75vw;
     height: 84vh;
     font-size: 1.2em;
     text-align: justify;
@@ -25,9 +25,10 @@
 }
 .contImg {
     height: 60vh;
-    width: 25vw;
+    width: auto;
     float: right;
     margin-left: 5vw;
+    border-radius: 5px;
 }
 @media (max-width: 600px){
     .textContainer{

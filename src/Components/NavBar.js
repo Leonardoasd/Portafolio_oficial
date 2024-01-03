@@ -67,8 +67,11 @@ const NavBar = () => {
   
   return (
     <div className={navBarOpen === false ? (scroll ? styles.navBarScroll : styles.navBar) : styles.navOpen}>
-      {!navBarOpen && <Link className={styles.contLogo} to="Home" smooth duration={500} ><img src={logotipo} alt="logotipo" className={styles.logo}/><h2>| Portafolios de Leonardo</h2></Link> }
-
+      {!navBarOpen && 
+      <Link className={styles.contLogo} to="Home" smooth duration={500} >
+        <img src={logotipo} alt="logotipo" className={styles.logo}/>
+        <h2>| Portafolios de Leonardo</h2>
+      </Link>}
       {!navBarOpen && (windowDimension.width < 900 || windowDimension.height > 1300) ? (
       <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} className={styles.menuNav} size={25} />
       )

@@ -33,58 +33,12 @@
     justify-content: center;
     transition: width 0.3s ease, height 0.3s ease ;
 }
-.contenido {
-    width: 96%;
-    height: 80%;
-    border-radius: 5px;
-}
-.miniNav p {
-    height: 3vh;
-    margin: 0;
-    font-weight: bold;
-    margin-bottom: 0.6vh;
-}
-.img1 {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
 .proyecto1:hover{
     width: 21vw;
     height: 27vh;
     cursor: pointer;
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out, box-shadow 0.3s ease ;
     box-shadow: 0px 4px 10px 6px rgba(255, 255, 255, 0.164);
-}
-.openVentana {
-    height: 70vh;
-    width: 60vw;
-    background-color: rgba(237, 231, 231, 0.3);
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: width 0.3s ease, height 0.3s ease ;
-    position: absolute;
-    z-index: 10;
-}
-.openVentana .miniNav{
-    height: 3vh;
-    margin: 0;
-    font-weight: bold;
-    margin: 0;
-    width: 99%;
-    height: 8%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.openVentana .miniNav p {
-    margin-left: 5px;
 }
 .close {
     height: 4vh;
@@ -98,59 +52,102 @@
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
-.openVentana .contenido {
-    background-color: rgb(32, 32, 32);
-    border: 1px solid black;
-    width: 98.5%;
-    height: 90%;
-    border-radius: 5px;
-    margin: 0 0 6px 0 ;
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    grid-template-rows: 3fr 1fr;
+.miniNavbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
 }
-.openVentana .contenido .divImgOpen {
+.BigminiNav {
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.BigminiNav h3 {
+    margin-left: 10px;
+}
+.BigminiNav .close {
+    margin-right: 5px;
+}
+.miniatura {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.miniatura img {
     width: 100%;
     height: 100%;
+    border: solid rgba(117, 118, 117, 0) 0.5vw;
+    box-sizing: border-box;
+    border-top: 0;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
+}
+.openWin {
+    height: 70vh;
+    width: 60vw;
+    background-color: rgba(237, 231, 231, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s ease;
+    display: flex; 
+    flex-direction: column;
     align-items: center;
 }
-.imgPrincipal{
-    width: 93%;
-    height: 90%;
+.contOpenVentana {
+    width: auto;
+    height: 89.5%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
-.openVentana .contenido .descripcion{
-    margin: 0 30px 0 30px;
-    text-align: start;
+.imgOpenWin {
+    height: 42vh;
+    width: 37vw;
+    max-width: 37vw;
+    box-sizing: border-box;
+    border-top: 0;
+    border-radius: 5px;
+    margin: auto;
+}
+.divDescription {
     font-size: 1.2em;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
 }
-.descripcion h2 {
-    text-align: center;
-}
-.logos {
-    height: 16vh;
-    width: 100%;
+.divTecnologias {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 .img {
     height: 10vh;
-    width: auto;
+    margin: 0;
 }
-.contButtons {
+.divBotones {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
-.contButtons button {
+.divBotones a {
     height: 6vh;
     width: 8vw;
     border-radius: 20px;
@@ -158,92 +155,38 @@
     background-color: rgb(117, 118, 117);
     box-shadow: 0px 0px 5px 4px rgba(53, 52, 52, 0.507);
     border: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contButtons button:hover {
+.divBotones a:hover {
     cursor: pointer;
     background-color: rgb(77, 75, 75);
     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.507);
     color: white;
     transition: 0.3s ease;
 }
-.proyecto2{
-    border: 1px solid white;
-    height: 30px;
-    width: 50px;
-}
-.proyecto3{
-    border: 1px solid white;
-    height: 30px;
-    width: 50px;
-}
-.proyecto4{
-    border: 1px solid white;
-    height: 30px;
-    width: 50px;
-}
-.proyecto5{
-    border: 1px solid white;
-    height: 30px;
-    width: 50px;
-}
-.proyecto6{
-    border: 1px solid white;
-    height: 30px;
-    width: 50px;
-}
 @media (max-width: 600px){
     .proyecto1{
         height: 18vh;
         width: 70vw;
-    }
-    .proyecto1 .miniNav p {
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
-    .proyecto1 .miniNav {
-        width: 100%;
-        margin: 0;
-        height: 15%;
-        display: flex;
-        justify-content: center;
-    }
-    .contenido .DivImg {
-        height: 100%;
-        width: 100%;
-        border: 5px solid rgba(0, 0, 0, 0);
-        position: absolute;
-        box-sizing: border-box;
-    }
-    .contenido {
-        width: 100%;
-        height: 85%;
-        margin: 0;
-        position: relative;
-    }
-    .img1 {
-        height: 100%;
-        width: 100%;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
     .containerProyects {
         height: 74vh;
         width: 80vw;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        overflow-x: scroll;
     }
-    .divImgOpen{
-        height: 1vh;
-        width: 2vw;
-    }
-    .imgPrincipal{
-        height: 86%;
-        width: 90%;
-    }
-    .openVentana {
+    .openWin {
         width: 74vw;
         height: 70vh;
     }
-    .openVentana .contenido{
+    .contOpenVentana{
         background-color: rgb(32, 32, 32);
         width: 94%;
         height: 93%;
@@ -251,34 +194,40 @@
         margin: 0 0 6px 0 ;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 160px 26vh 10vh 10vh;
+        grid-template-rows: 160px 23vh 10vh 10vh;
         font-size: 0.8em;
     }
-    .logos img {
-        height: 5vh;
+    .imgOpenWin {
+        height: 16vh;
+        width: 66vw;
+        max-width: 66vw;
     }
-    .logos {
-        height: 10vh;
+    .divDescription p{
+        margin: 0 5vw 0 5vw;
     }
-    .contButtons button{
+    .divTecnologias {
+        display: flex;
+        align-items: center;
+    }
+    .img {
+        height: 6vh;
+        width: auto;
+    }
+    .divBotones {
+        display: flex;
+        align-items: center;
+    }
+    .divBotones a {
         width: 20vw;
         height: 4vh;
         border-radius: 5px;
     }
-    .openVentana .miniNav {
+    .BigminiNav {
         font-size: 0.9em;
         height: 7%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .openVentana .miniNav p {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin-left: 2vw;
     }
     .close {
         height: 3vh;
@@ -287,60 +236,66 @@
 }
 @media (max-width: 400px){
     .proyecto1{
-        height: 19.3vh;
+        height: 18vh;
         width: 70vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 0.8em;
     }
     .containerProyects {
         height: 74vh;
         width: 80vw;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        overflow-x: scroll;
     }
-    .divImgOpen{
-        height: 1vh;
-        width: 2vw;
-    }
-    .imgPrincipal{
-        height: 86%;
-        width: 90%;
-    }
-    .openVentana {
-        width: 70vw;
+    .openWin {
+        width: 74vw;
         height: 70vh;
+        font-size: 0.8em;
     }
-    .openVentana .contenido{
+    .contOpenVentana{
         background-color: rgb(32, 32, 32);
         width: 94%;
-        height: 93%;
+        height: 92%;
         border-radius: 5px;
         margin: 0 0 6px 0 ;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 130px 170px 70px 100px;
-        font-size: 0.6em;
+        grid-template-rows: 160px 23vh 10vh 10vh;
+        font-size: 0.8em;
     }
-    .logos img {
-        height: 5vh;
+    .imgOpenWin {
+        height: 16vh;
+        width: 66vw;
+        max-width: 66vw;
     }
-    .contButtons button{
+    .divDescription p{
+        margin: 0 5vw 0 5vw;
+    }
+    .divTecnologias {
+        display: flex;
+        align-items: center;
+    }
+    .img {
+        height: 6vh;
+        width: auto;
+    }
+    .divBotones {
+        display: flex;
+        align-items: center;
+    }
+    .divBotones a {
         width: 20vw;
         height: 4vh;
         border-radius: 5px;
     }
-    .openVentana .miniNav {
+    .BigminiNav {
         font-size: 0.9em;
         height: 7%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .openVentana .miniNav p {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin-left: 2vw;
     }
     .close {
         height: 3vh;
