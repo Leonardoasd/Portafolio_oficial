@@ -1,6 +1,6 @@
 import Poemas from "../imagenes/frases-aleatorias.png";
-import Fondo from "../imagenes/anonimous.jpg";
 import Aleatoriedad from "../imagenes/SistemaDeAleatoriedad.png"
+import Drum from "../imagenes/drum-machine.png"
 
 export const Proyects = [{
     id: 0,
@@ -18,13 +18,13 @@ export const Proyects = [{
     linkWeb: "https://leonardoasd.github.io/sistema-de-aleatoriedad/",
     linkRepository: "https://github.com/Leonardoasd/Sistema_de_Aleatoriedad.git"
 },
-// {
-//     id: 2,
-//     nombre: "Tercer Proyecto",
-//     imagen: Fondo,
-//     description: "Esta web es un proyecto en el trabajare mas adelante, pero que por ahora no esta terminado",
-//     linkWeb: "#",
-//     linkRepository: "#" 
-// },
+{
+    id: 2,
+    nombre: "Drum Machine",
+    imagen: Drum,
+    description: "Esta es una página web que básicamente emula lo que sería una caja de ritmos, con toda la lógica hecha con JavaScript y React.",
+    linkWeb: "https://leonardoasd.github.io/drum-machine/",
+    linkRepository: "https://github.com/Leonardoasd/drum-machine" 
+},
 
 ]
