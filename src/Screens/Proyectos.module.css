@@ -18,11 +18,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    
+    overflow-x: auto;
 }
 .proyecto1{
     height: 25vh;
-    width: 20vw;
+    width: 300px;
     background-color: rgba(237, 231, 231, 0.3);
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -32,10 +32,11 @@
     align-items: center;
     justify-content: center;
     transition: width 0.3s ease, height 0.3s ease ;
+    margin: 30px;
 }
 .proyecto1:hover{
-    width: 21vw;
-    height: 27vh;
+    width: 320px;
+    height: 185px;
     cursor: pointer;
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out, box-shadow 0.3s ease ;
     box-shadow: 0px 4px 10px 6px rgba(255, 255, 255, 0.164);
@@ -98,7 +99,7 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     transition: 0.3s ease;
     display: flex; 
     flex-direction: column;
@@ -168,17 +169,21 @@
     color: white;
     transition: 0.3s ease;
 }
-@media (max-width: 600px){
+@media (max-width: 900px){
     .proyecto1{
-        height: 18vh;
-        width: 70vw;
+        height: 160px;
+        width: 290px;
         margin-left: 5vw;
         margin-right: 5vw;
+    }
+    .proyecto1:hover{
+        height: 160px;
+        width: 290px;
     }
     .containerProyects {
         height: 74vh;
         width: 80vw;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         overflow-x: scroll;
     }
@@ -189,7 +194,7 @@
     .contOpenVentana{
         background-color: rgb(32, 32, 32);
         width: 94%;
-        height: 93%;
+        height: 91.6%;
         border-radius: 5px;
         margin: 0 0 6px 0 ;
         display: grid;
@@ -236,16 +241,20 @@
 }
 @media (max-width: 400px){
     .proyecto1{
-        height: 18vh;
-        width: 70vw;
-        margin-left: 5vw;
+        height: 120px;
+        width: 220px;
+        margin-left: 10vw;
         margin-right: 5vw;
         font-size: 0.8em;
+    }
+    .proyecto1:hover{
+        height: 120px;
+        width: 220px;
     }
     .containerProyects {
         height: 74vh;
         width: 80vw;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         overflow-x: scroll;
     }
@@ -257,7 +266,7 @@
     .contOpenVentana{
         background-color: rgb(32, 32, 32);
         width: 94%;
-        height: 92%;
+        height: 91.8%;
         border-radius: 5px;
         margin: 0 0 6px 0 ;
         display: grid;
@@ -300,5 +309,91 @@
     .close {
         height: 3vh;
         width: 9vw;
+    }
+}
+@media (min-height: 1023px){
+    .Proyectosdiv h1 {
+        font-size: 6em;
+    }
+    .proyecto1{
+        height: 16vh;
+        width: 55vw;
+        margin-left: 10vw;
+        margin-right: 5vw;
+        
+    }
+    .proyecto1:hover{
+        height: 16vh;
+        width: 55vw;
+    }
+    .containerProyects {
+        height: 74vh;
+        width: 80vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        overflow-x: scroll;
+        font-size: 2em;
+    }
+    .openWin {
+        width: 77vw;
+        height: 20vh;
+        font-size: 0.8vh;
+    }
+    .contOpenVentana {
+        width: auto;
+        height: 89.5%;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin-left: 8px;
+        margin-right: 8px;
+        border-radius: 5px;
+        background-color: rgb(32, 32, 32);
+        color: white;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
+    .imgOpenWin {
+        height: 10vh;
+        width: 40vw;
+    }
+    .divDescription{
+        font-size: 1em;
+    }
+    .divDescription p{
+        margin: 0 2vw 0 2vw;
+    }
+    .divTecnologias {
+        display: flex;
+        align-items: center;
+    }
+    .img {
+        height: 3vh;
+        width: auto;
+    }
+    .divBotones {
+        display: flex;
+        align-items: center;
+    }
+    .divBotones a {
+        width: 10vw;
+        height: 2vh;
+        border-radius: 5px;
+        font-size: 0.8em;
+    }
+    .BigminiNav {
+        font-size: 0.9em;
+        height: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .close {
+        height: 1.6vh;
+        width: 6vw;
+    }
+    .BigminiNav{
+        border: 1px solid rgba(0, 0, 0, 0);
+        height: 1.7vh
     }
 }

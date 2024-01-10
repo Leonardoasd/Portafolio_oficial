@@ -44,6 +44,7 @@
 }
 .logoHtml {
     height: 100px;
+    width: 100px;
 }
 .logosCss{
     height: 100px;
@@ -151,53 +152,66 @@
     align-items: flex-end;
     color: white;
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
+    .Tecnologias {
+        height: 80vh;
+    }
     .divDelLogo {
-        margin: 0 0 0 4vw;
+        margin: 0 20px;
+        width: 120px;
     }
     .Container{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row: repeat(3, 1fr);
+        align-items: center;
         justify-content: flex-start;
-
     }
     .logoHtml {
-        height: 14vh;
+        height: 10vh;
+        width: auto;
     }
     .logosCss{
-        height: 14vh;
+        height: 10vh;
     }
     .logoJS {
-        height: 13vh;
+        height: 10vh;
         width: auto;
         border-radius: 15px;
     }
     .logoReact {
-        height: 14vh;
+        height: 10vh;
         width: auto;
         margin: 0 1.2vw 0 1.2vw;
     }
     .logoRedux{
-        height: 14vh;
+        height: 10vh;
         width: auto;
     }
     .logoBootstrap {
-        height: 14vh;
+        height: 10vh;
         margin: 0 1.2vw 0 1.2vw;
     }
     .logoD3 {
-        height: 14vh;
+        height: 10vh;
     }
     .lvlHtml, .lvlCss, .lvlJS, .lvlReact, .lvlRedux, .lvlD3, .lvlBootstrap {
-        padding: 0 30px 0 30px;
         margin: 0 30px 0 30px
     }
 }
 @media (max-width: 400px){
     .divDelLogo {
-        margin: 0 0 0 4vw;
+        margin: 0 20px;
+        width: 120px;
     }
     .Container{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row: repeat(3, 1fr);
+        align-items: center;
         justify-content: flex-start;
-
     }
     .logoHtml {
         height: 14vh;
@@ -227,7 +241,59 @@
         height: 14vh;
     }
     .lvlHtml, .lvlCss, .lvlJS, .lvlReact, .lvlRedux, .lvlD3, .lvlBootstrap {
-        padding: 0 30px 0 30px;
-        margin: 0 30px 0 30px
+        margin: 0 30px 0 30px;
+    }
+}
+@media (min-height: 1023px){
+    .Tecnologias {
+        height: 80vh;
+        font-size: 2em;
+    }
+    .divDelLogo {
+        margin: 0 5vw;
+        width: 35vw;
+        height: 18vh;
+    }
+    .Container{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row: repeat(3, 1fr);
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .logoHtml {
+        height: 14vh;
+        width: auto;
+    }
+    .logosCss{
+        height: 14vh;
+    }
+    .logoJS {
+        height: 13vh;
+        width: auto;
+        border-radius: 15px;
+    }
+    .logoReact {
+        height: 14vh;
+        width: auto;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoRedux{
+        height: 14vh;
+        width: auto;
+    }
+    .logoBootstrap {
+        height: 14vh;
+        margin: 0 1.2vw 0 1.2vw;
+    }
+    .logoD3 {
+        height: 14vh;
+    }
+    .lvlHtml, .lvlCss, .lvlJS, .lvlReact, .lvlRedux, .lvlD3, .lvlBootstrap {
+        margin: 0 2vw 0 10vw;
+        height: 14vh;
+        width: 22vw;
+        border-radius: 30px;
     }
 }

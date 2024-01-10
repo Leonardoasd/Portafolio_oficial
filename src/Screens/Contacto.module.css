@@ -69,7 +69,7 @@
     transition: opacity 1.4s ease;
     font-size: 0.9em;
 }
-@media (max-width: 600px){
+@media (max-width: 900px){
     .textContainer{
         width: 90vw;
         font-size: 0.7em;
@@ -121,3 +121,37 @@
         width: 18vw;
     }
 }   
+@media (min-height: 1300px){
+    .textContainer{
+        width: 90vw;
+        font-size: 2em;
+    }
+    .iconContainer{
+        width: 90vw;
+        height: 15vh;
+        font-size: 0em;
+    }
+    .iconContainer a {
+        width: 18vw;
+        display: flex;
+        justify-content: center;
+    }
+    .iconContainer .icon {
+        width: 18vw;
+        display: flex;
+        justify-content: center;
+    }
+    .IconoLit {
+        height: 8vh;
+        width: 10vw;
+    }
+    .celNumber{
+        width: 18vw;
+    }
+    .noMostrar {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        font-size: 0;
+     }
+}

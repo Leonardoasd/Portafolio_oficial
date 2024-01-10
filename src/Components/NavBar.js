@@ -72,15 +72,15 @@ const NavBar = () => {
         <img src={logotipo} alt="logotipo" className={styles.logo}/>
         <h2>| Portafolios de Leonardo</h2>
       </Link>}
-      {!navBarOpen && (windowDimension.width < 900 || windowDimension.height > 1300) ? (
+      {!navBarOpen && (windowDimension.width < 900 || windowDimension.height > 1023) ? (
       <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} className={styles.menuNav} size={25} />
       )
-       : ((windowDimension.width < 900 || windowDimension.height > 1300) && (<AiOutlineClose onClick={() => setNavBarOpen(!navBarOpen)} className={styles.closeNav} size={40} />))
+       : ((windowDimension.width < 900 || windowDimension.height > 1023) && (<AiOutlineClose onClick={() => setNavBarOpen(!navBarOpen)} className={styles.closeNav} size={40} />))
        }
       {navBarOpen &&
         <ul className={styles.navOpenContainer}>
         {links.map((x) => (
-          <div >
+          <div key={x.id + 4}>
             <Link onClick={() => setNavBarOpen(!navBarOpen)}
             to={x.link} 
             smooth 
@@ -89,16 +89,16 @@ const NavBar = () => {
             className={styles.navLink}>
               {reemplazarGuionesBajos(x.link)}
             </Link>
-            <div className={styles.border}></div>
+            <div className={styles.border} key={x.id + 2} ></div>
           </div>
         ))}
         </ul>
       }
       {
-        (windowDimension.width > 900 && windowDimension.height < 1790) && 
+        (windowDimension.width > 900 && windowDimension.height < 1023) && 
         (<ul className={styles.linksContainer}>
           {links.map((x) => (
-            <div>
+            <div key={x.id + 3} >
               <Link
               to={x.link} 
               smooth 
@@ -107,7 +107,7 @@ const NavBar = () => {
               className={styles.navLink}>
                 {reemplazarGuionesBajos(x.link)}
               </Link>
-              <div className={windowDimension.width < 900 && styles.border}></div>
+              <div key={x.id + 1} className={windowDimension.width < 900 ? styles.border : styles.nada}></div>
             </div>
           ))}
           </ul>)

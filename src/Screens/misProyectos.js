@@ -1,6 +1,8 @@
 import Poemas from "../imagenes/frases-aleatorias.png";
 import Aleatoriedad from "../imagenes/SistemaDeAleatoriedad.png"
-import Drum from "../imagenes/drum-machine.png"
+import Drum from "../imagenes/drum-machine.png";
+import Calculator from "../imagenes/calculadora-web.png";
+import Reloj from "../imagenes/reloj25.png"
 
 export const Proyects = [{
     id: 0,
@@ -26,5 +28,20 @@ export const Proyects = [{
     linkWeb: "https://leonardoasd.github.io/drum-machine/",
     linkRepository: "https://github.com/Leonardoasd/drum-machine" 
 },
-
+{
+    id: 3,
+    nombre: "Calculator",
+    imagen: Calculator,
+    description: "Esta app es una calculadora hecha con JavaScript 100% funcional, formó parte de mis proyectos para obtener mi titulación en freeCodeCamp.",
+    linkWeb: "https://leonardoasd.github.io/project-Calculator/",
+    linkRepository: "https://github.com/Leonardoasd/project-Calculator"
+},
+{
+    id: 4,
+    nombre: "Reloj 25 + 5",
+    imagen: Reloj,
+    description: "Este es el famoso 'reloj de pomodoro', el cual plantea una dinámica de trabajo que se basa, muy resumidamente, en trabajar 25 minutos, y descanzar 5.",
+    linkWeb: "https://leonardoasd.github.io/clock25/",
+    linkRepository: "https://github.com/Leonardoasd/clock25"
+}
 ]
