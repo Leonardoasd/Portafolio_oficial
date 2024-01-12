@@ -90,7 +90,7 @@
     .textContainer div {
         grid-row: 3 / 5;
         grid-column: span 2;
-        line-height: 2.8vw;
+        line-height: 3vw;
         margin: 35px;
         font-size: 1em;
         margin-top: 0;
@@ -126,9 +126,9 @@
     .textContainer div {
         grid-row: 3 / 5;
         grid-column: span 2;
-        line-height: 2.8vw;
+        line-height: 3vw;
         margin: 35px;
-        font-size: 1em;
+        font-size: 1.6vh;
         margin-top: 0;
     }
     .botonDescarga{
