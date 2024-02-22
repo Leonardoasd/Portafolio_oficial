@@ -16,7 +16,7 @@ export const Proyects = [{
     id: 1,
     nombre: "Poemas Aleatorios",
     imagen: Poemas,
-    description: "Esta web es un sistema de JavaScript que permite registrar palabras para luego devolver una de esas palabras de manera aleatoria, similar a una lotería.",
+    description: "Esta web tiene aproximadamente 30 poemas cortos los cuales se muestran de manera aleatoria al presionar el botón 'new poem'.",
     linkWeb: "https://leonardoasd.github.io/Proyecto-freeCodeCamp/",
     linkRepository: "https://github.com/Leonardoasd/Proyecto-freeCodeCamp" 
 },
