@@ -7,6 +7,7 @@ import react from "../imagenes/react.png";
 import redux from "../imagenes/redux.png";
 import Bootstrap from "../imagenes/bootstrap.png";
 import d3 from "../imagenes/d3.png";
+import SQL from "../imagenes/sql.png"
 
 const Tecnologias = () => {
 
@@ -67,7 +68,14 @@ const [LevelTechnology, setLevelTechnology] = useState(null);
     alt: "logo de D3",
     level: styles.lvlD3,
     porcentaje: "40%"
-
+  },
+  {
+    id:7,
+    name: styles.logoSQL,
+    url: SQL,
+    alt: "logo de SQL",
+    level: styles.lvlSQL,
+    porcentaje: "40%"
   }]
 
 const handleLevel = (id) => {
