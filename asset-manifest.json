@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Portafolio_oficial/static/css/main.a840cce9.css",
-    "main.js": "/Portafolio_oficial/static/js/main.c36e8717.js",
+    "main.css": "/Portafolio_oficial/static/css/main.cc963ef3.css",
+    "main.js": "/Portafolio_oficial/static/js/main.9ad7f254.js",
     "static/js/787.4a8b1d9a.chunk.js": "/Portafolio_oficial/static/js/787.4a8b1d9a.chunk.js",
     "static/media/mia-foto.jpg": "/Portafolio_oficial/static/media/mia-foto.0002e0417d1b4b22ee0c.jpg",
     "static/media/pared-negra.jpg": "/Portafolio_oficial/static/media/pared-negra.1672b9394300183611eb.jpg",
+    "static/media/portes-valencia.png": "/Portafolio_oficial/static/media/portes-valencia.d18b3caf050e89542545.png",
     "static/media/fondoJS.jpg": "/Portafolio_oficial/static/media/fondoJS.e79be90b46e32882e525.jpg",
     "static/media/archivo.pdf": "/Portafolio_oficial/static/media/archivo.d6f785b95fc4e514bc65.pdf",
     "static/media/bootstrap.png": "/Portafolio_oficial/static/media/bootstrap.95f1e0a0a8bd32345509.png",
@@ -20,12 +21,12 @@
     "static/media/css.png": "/Portafolio_oficial/static/media/css.495a79bfbc4ced7c7c0e.png",
     "static/media/JavaScript-logo.png": "/Portafolio_oficial/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/Portafolio_oficial/index.html",
-    "main.a840cce9.css.map": "/Portafolio_oficial/static/css/main.a840cce9.css.map",
-    "main.c36e8717.js.map": "/Portafolio_oficial/static/js/main.c36e8717.js.map",
+    "main.cc963ef3.css.map": "/Portafolio_oficial/static/css/main.cc963ef3.css.map",
+    "main.9ad7f254.js.map": "/Portafolio_oficial/static/js/main.9ad7f254.js.map",
     "787.4a8b1d9a.chunk.js.map": "/Portafolio_oficial/static/js/787.4a8b1d9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a840cce9.css",
-    "static/js/main.c36e8717.js"
+    "static/css/main.cc963ef3.css",
+    "static/js/main.9ad7f254.js"
   ]
 }
